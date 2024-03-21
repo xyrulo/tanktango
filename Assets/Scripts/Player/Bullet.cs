@@ -1,3 +1,6 @@
+// Bullet.cs
+// Script for the projectile fired from the tank.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +8,6 @@ using Unity.Netcode;
 
 public class Bullet : NetworkBehaviour
 {
-    
-    //private Rigidbody2D rb;
-
     [SerializeField] private AudioSource src;
     [SerializeField] private AudioClip sfxExplode;
     public float speed = 300f;

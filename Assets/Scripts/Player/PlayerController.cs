@@ -68,8 +68,6 @@ public class PlayerController : NetworkBehaviour
     }
 
     private void FixedUpdate() {
-        
-
         // Forward input
         if (_forward && _turnDir == 0) {
             rb.AddForce(this.transform.up * this.moveSpeed);
